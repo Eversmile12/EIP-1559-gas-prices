@@ -1,11 +1,12 @@
-const {createAlchemyWeb3} = require('@alch/alchemy-web3');
-const web3 = createAlchemyWeb3("CHANGE WITH WEBSOCKET URI");
+const Web3 = require('web3');
+const web3 = new Web3("INSERT YOUR INFURE WEBSOCKET URI");
 
 
 async function getLatestGasFees(){
     const historicalBlocks = 20;
 
     const feeHistory = await web3.eth.getFeeHistory(historicalBlocks, 'pending', [50])
+    // console.log(feeHistory)
     const baseTipAvg =  getHistoricalAvgBaseTip(feeHistory);
     const priorityGasFeeAvg = getHistoricalAvgPriorityFee(feeHistory)
     const historicalGasFeeAvg = baseTipAvg + priorityGasFeeAvg

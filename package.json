@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@alch/alchemy-web3": "^1.1.7"
+    "web3": "^1.6.1"
   }
 }
