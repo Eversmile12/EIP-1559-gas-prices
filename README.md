@@ -38,6 +38,7 @@ node app.js
 ```
 Wait a couple of seconds and you should see the estimate appearing in your terminal:
 ![eip-price-estimator-log](https://user-images.githubusercontent.com/72762629/142851249-b7806b13-fcf0-47fe-ab3e-8d490bba4f3a.gif)
+
 Note: It might take up to a minute for the websocket to connect and start logging Gas prices. GIF is x10 speed.
 
 
